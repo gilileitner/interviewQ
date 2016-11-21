@@ -30,7 +30,7 @@ Sample input:
 Sample output:
 ```
 1,Erez,ERROR
-2.Netanel,82.5,Math,English
+2,Netanel,82.5,Math,English
 3,Ronen,80,English
 ```
 
