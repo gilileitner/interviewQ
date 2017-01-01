@@ -1,8 +1,6 @@
 import org.junit.Test;
 
-import java.io.File;
-import java.io.StringWriter;
-import java.io.Writer;
+import java.io.*;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,9 +10,14 @@ public class StudentPrinterTest {
     public void testExampleInput() {
         Writer writer = new StringWriter();
         StudentsPrinter studentsPrinter = new StudentsPrinter(writer);
-        studentsPrinter.printStudents(new File("test_input.csv"));
+        studentsPrinter.printStudents(readerFromTestResource("test_input.csv"));
         String output = writer.toString();
         assertEquals(expected(), output);
+    }
+
+    private Reader readerFromTestResource(String resourcePath) {
+        return new BufferedReader(new InputStreamReader(
+                getClass().getClassLoader().getResourceAsStream(resourcePath)));
     }
 
     private String expected() {
