@@ -34,3 +34,6 @@ Sample output:
 3,Ronen,80,English
 ```
 
+#Technical Details
+* This is using gradle. in order to build it, clone the repo and run ./gradlew build
+* You can import it to your favorite IDEA as a gradle project
