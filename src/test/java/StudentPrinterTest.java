@@ -23,7 +23,7 @@ public class StudentPrinterTest {
     private String expected() {
         return
         "1,Erez,ERROR" + "\n" +
-        "2.Netanel,82.5,Math,English" + "\n" +
+        "2,Netanel,82.5,English,Math" + "\n" +
         "3,Ronen,80,English";
     }
 }
