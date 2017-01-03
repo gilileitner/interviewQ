@@ -24,6 +24,6 @@ public class StudentPrinterTest {
         return
         "1,Erez,ERROR" + "\n" +
         "2,Netanel,82.5,English,Math" + "\n" +
-        "3,Ronen,80,English";
+        "3,Ronen,80,English" + "\n";
     }
 }
